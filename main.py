@@ -12,6 +12,7 @@ def main():
     game_clock = pygame.time.Clock()
     player = PlayerClass(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
     dt = 0
+    
     while game_run:
         screen.fill("black")
         
@@ -22,7 +23,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
         ticker = game_clock.tick(60)
-        dt += ticker / 1000
+        dt = ticker / 1000
         
 
 if __name__ == "__main__":
